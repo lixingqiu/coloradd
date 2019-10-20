@@ -1,13 +1,18 @@
 # coloradd
  This is the color increase command that matches the python turtle drawing command.
 example code:
+    """
+        pip install coloradd
+   
+    """
 
     import turtle
     from coloradd import *
     screen = turtle.getscreen()
     screen.delay(0)
+    screen.colormode(255)         # 使用coloradd模块需要设置颜色模式为255
     screen.title("draw lollipop 画棒棒糖 by lixingqiu")
-    c  = (1,0,0)                  # RGB红色
+    c  = (255,0,0)                  # RGB红色
     turtle.ht()                   # 隐藏海龟
     turtle.penup()                # 抬起笔来
     turtle.goto(0,100)            # 定位坐标
